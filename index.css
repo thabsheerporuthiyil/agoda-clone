@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 5px 25px;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.icon{
+    width: 100px;
+}
+.icon img{
+    width: 70px;
+}
+.nav-left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left-link:hover{
+    color: #2167dc;
+}
+.bundle{
+    background-color: #e12d2d;
+    padding: 2px 4px;
+    font-size: 11px;
+    color: white;
+    border-radius: 2px;
+}
+.flight{
+    position: relative;
+    bottom: 8px;
+}
+.transport{
+    position: relative;
+    bottom: 8px;
+}
+.new{
+    background-color: #e12d2d;
+    padding: 2px 4px;
+    font-size: 11px;
+    color: white;
+    border-radius: 2px;
+    width: 36px;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 35%;
+}
+.flag{
+    width: 25px;
+    height: 20px;
+}
+.rs{
+    font-size: 16px;
+}
+.sign-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 20px;
+}
+.sign-btn{
+    font-size: 16px;
+    font-weight: 800;
+    color: #2167dc;
+    padding: 9px 20px;
+    border-radius: 20px;
+}
+.sign-btn:hover{
+    background-color: #ecf0f7;
+}
+
+.create{
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #2167dc;
+    background-color: white;
+    border: 0.2px solid #ccc;
+}
+.create:hover{
+    background-color: #ecf0f7;
+    border-color: #2167dc;
+    cursor: pointer;
+}
+.cart-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+.cart-bg i{
+    cursor: pointer;
+}
+#cart{
+    padding: 9px 20px;
+}
+#cart:hover{
+    background-color: #ecf0f7;
+    border-radius: 50px;
+}
+.hamburger{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    width: 20px;
+    height: 20px;
+  }
+
+.hamburger:hover{
+    background-color: #b0c9f1;
+    border-radius: 5px;
+    
+}
+.hamburger:hover .menu {
+  filter: brightness(0) invert(1);
+}
+.page1-all{
+    height: 610px;
+}
+
+.page1{
+    background-image: url(https://cdn0.agoda.net/images/accom/3367_IN_homepage_background_B.png);
+    background-repeat: no-repeat;
+    height: 45vh;
+    background-size: cover;
+    border-bottom-left-radius: 45px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 35px;
+}
+.top-box{
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    height: 48px;
+    width: 825px;
+    position: absolute;
+    top: 150px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.top-box a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #242c39;
+}
+.fa-hotel,.fa-house,.fa-plane-departure,.fa-chess,.fa-taxi{
+    color: #242c39;
+}
+.fa-hotel{
+    color: #2167dc;
+}
+#hotel{
+    color: #2167dc;
+    border-bottom: 4px solid #2167dc;
+    display: inline-block;
+    padding-bottom: 8px;
+    position: relative;
+    top: 8px;
+}
+.bottom-box{
+    width: 1124px;
+    height: 332px;
+    background-color: #f8f7f9;
+    position: absolute;
+    top: 180px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 30px 40px;
+}
+.btns{
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 10px;
+}
+.over,.day{
+    border: 1px solid black;
+    font-size: 14px;
+    width: 130px;
+    height: 35px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.over{
+    color: #2167dc;
+    background-color: #e4eeff;
+    border-color: #2167dc;
+    border-width: 2px;
+}
+.day{
+    border-color: #ccc;
+    color: #242c39;
+}
+.grid-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 150px;
+    padding-top: 10px;
+    gap: 10px;
+}
+.calender1{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.calender2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+}
+.destination{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 6px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    gap: 20px;
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+#destination{
+    width: 100%;
+    font-size: 16px;
+    text-decoration: none;
+    color: #8b8d8d;
+    border: none;
+    outline: none;
+}
+.fa-magnifying-glass{
+    color: #242c39;
+    font-size: 20px;
+}
+.fa-calendar,.fa-people-group{
+    color: #242c39;
+    font-size: 20px;
+}
+.date-view{
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    padding-left: 20px;
+    gap: 120px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+.date-view a{
+    text-decoration: none;
+}
+.aug2, .aug4,.two-adult{
+    color: #242c39;
+}
+.sat, .mon,.room{
+    color: #959ead;
+}
+.adult{
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    gap: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.adult a{
+    text-decoration: none;
+}
+.adult-right .fa-angle-down{
+    position: absolute;
+    left: 480px;
+    bottom: 22px;
+}
+.add-flight{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    width: 150px;
+    height: 30px;
+    padding-left: 20px;
+    top: 32px;
+    border-radius: 25px;
+}
+.add-flight a{
+    color: #2167dc;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.add-flight:hover{
+    background-color: #e8ecf6;
+}
+.fa-plus{
+    color: #2167dc;
+    font-size: 20px;
+}
+.search-box{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 480px;
+    background-color: #5293f9;
+    width: 490px;
+    height: 64px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.search-box a{
+    text-decoration: none;
+}
+.search-box:hover{
+    background-color: #87b2fa;
+}
+.page2{
+    margin: 0 210px;
+}
+.page2 h2{
+    font-weight: 600;
+    color: rgb(37, 44, 56);
+}
+.imgs-destination a.others h3,
+.imgs-destination a.others p{
+    text-decoration: none;
+}
+.imgs-destination a.others:hover h3,
+.imgs-destination a.others:hover p{
+    text-decoration: underline;
+    text-decoration-color: #1a73e8;
+}
+.imgs-destination{
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.imgs-destination img{
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+}
+.imgs-destination h3{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #252c38;
+}
+.imgs-destination p{
+    font-weight: 400;
+    font-size: 12px;
+    color: #252c38;
+    text-align: center;
+}
+.accomodations{
+    margin: 0 210px;
+    display: flex;
+    gap: 15px;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.view-all{
+    color: #2167dc;
+}
+.view-all:hover{
+    text-decoration: underline;
+    border-bottom: 2px solid #1a73e8;
+}
+.accomodations img{
+    width: 328px;
+    height: 145px;
+    border-radius: 20px;
+}
+.accomodations-head{
+    margin: 0 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accomodations-main{
+    position: relative;
+    top: 100px;
+}
+.accomodations-head h2{
+    color: #252c38;
+}
+.flight-activities{
+    margin: 0 210px;
+    display: flex;
+    gap: 15px;
+    overflow: scroll;
+    scrollbar-width: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.flight-activities img{
+    width: 328px;
+    height: 154px;
+    border-radius: 20px;
+}
+.flight-head{
+    margin: 0 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flight-main{
+    position: relative;
+    top: 180px;
+}
+.flight-head h2{
+    color: #252c38;
+}
+.ad{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+    bottom: 90px;
+    left: 1200px;
+}
+.ad img{
+    width: 80%;
+    height: 80%;
+}
+.cross{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #2167dc;
+    z-index: 1000;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-xmark{
+    font-size: 22px;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
